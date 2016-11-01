@@ -6,8 +6,7 @@ Table of player data populated with JSON data.
 
 To view the table follow these steps:
 
-1. Download the project ZIP file
-* [Github afl-test ZIP](https://github.com/andrew-mcdougal/afl-test/archive/master.zip)
+1. Download the project ZIP file here: * [Github afl-test ZIP](https://github.com/andrew-mcdougal/afl-test/archive/master.zip)
 
 2. Open the ZIP file
 
