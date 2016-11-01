@@ -4,18 +4,34 @@
 1. Body
 2. Table
 3. Next Button
+4. Alt version
 
 *********/
 
 /* 0. Variables */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 $dark-grey: #696969;
+$afl-blue: #01285E;
+$afl-red: #C90010;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+
+
+
 
 /* 1. Body */
 body {
 	font-size: 12px;
 	line-height: 120%;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 /* 2. Table */
@@ -67,32 +83,6 @@ body {
 					margin: auto;
 				}
 			}
-
-			.team {
-				line-height: 26px;
-
-				/* team logos */
-				.team-logo {
-					background-image: url("../img/teams-tiny-2x.png");
-					background-repeat: no-repeat;
-					background-position: 0 0;
-					background-size: 20px auto;
-					display: block;
-					float: left;
-					height: 20px;
-					width: 20px;
-					overflow: hidden;
-					text-indent: -9999px;
-					opacity: 0;
-					margin: 4px 5px 0 0;
-				}
-			}
-
-			.cats .team-logo { background-position: 0 -240px;}
-			.power .team-logo { background-position: 0 -480px;}
-			.swans .team-logo { background-position: 0 -600px;}
-			.magpies .team-logo { background-position: 0 -120px;}
-			.bulldogs .team-logo { background-position: 0 -680px;}
 		}
 
 		tr:nth-child(even) {
@@ -106,20 +96,51 @@ body {
 	}
 }
 
+.team {
+line-height: 26px;
+
+	/* team logos */
+	.team-logo {
+		background-image: url("../img/teams-tiny-2x.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 20px auto;
+		display: block;
+		float: left;
+		height: 20px;
+		width: 20px;
+		overflow: hidden;
+		text-indent: -9999px;
+		opacity: 0;
+		margin: 4px 5px 0 0;
+	}
+}
+
+.cats .team-logo { background-position: 0 -240px;}
+.power .team-logo { background-position: 0 -480px;}
+.swans .team-logo { background-position: 0 -600px;}
+.magpies .team-logo { background-position: 0 -120px;}
+.bulldogs .team-logo { background-position: 0 -680px;}
+
 
 /* 3. Next Button */
 .button-container {
 	background: #2B0059;
 	padding: 1em;
+	position: fixed;
+	bottom: -130px;
+	width: 100%;
+	height: 100px;
 }
 .glitch {
 	border: none;
+	background: none;
 	font-size: 40px;
 	line-height: 1;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	position:absolute;
-	top: 50%;
+	bottom: 14%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: 0;
@@ -128,7 +149,7 @@ body {
 
 	&:before, &:after {
 		display: block;
-		content: 'get data';
+		content: 'Alternate version';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -148,10 +169,10 @@ body {
 
 	&:hover {
 		&:before {
-			animation: glitch .2s cubic-bezier(.25, .46, .45, .94) both infinite
+			animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite
 		}
 		&:after {
-			animation: glitch .2s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+			animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite
 		}
     }
 }
@@ -161,21 +182,156 @@ body {
 		transform: translate(0)
 	}
 	20% {
-		transform: translate(-5px, 5px)
+		transform: translate(-3px, 3px)
 	}
 	40% {
-		transform: translate(-5px, -5px)
+		transform: translate(-3px, -3px)
 	}
 	60% {
-		transform: translate(5px, 5px)
+		transform: translate(3px, 3px)
 	}
 	80% {
-		transform: translate(5px, -5px)
+		transform: translate(3px, -3px)
 	}
 	to {
 		transform: translate(0)
 	}
 }
+
+
+
+
+/* 4. Alt version */
+.alt-version {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	display: none;
+	height: 100vh;
+	width: 90%;
+	position: absolute;
+	top: 0;
+	padding: 5%;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#01285e+0,01285e+100&1+0,0.85+100 */
+	background: -moz-linear-gradient(top,  rgba(1,40,94,1) 0%, rgba(1,40,94,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(1,40,94,1) 0%,rgba(1,40,94,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(1,40,94,1) 0%,rgba(1,40,94,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01285e', endColorstr='#d901285e',GradientType=0 ); /* IE6-9 */
+
+
+	.container {
+		background: $afl-red;
+		color: #FFF;
+		padding: 20px;
+		@include border-radius(8px 8px 0 0);
+	}
+
+	#player-info {
+		background: #FFF;
+		@include border-radius(0 0 8px 8px);
+
+		.row {
+			color: $dark-grey;
+
+			.rank {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 900px) {
+	.alt-version {
+		font-size: 14px;
+
+		.container {
+			padding: 10px;
+
+			.row {
+
+				.columns {
+					margin-left: 2%;
+				}
+
+				.columns:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 850px) {
+	.alt-version {
+
+		.container {
+
+			.row {
+
+				.columns:first-child {
+					opacity: 0;
+				}
+			}
+		}
+
+		#player-info {
+
+			.row {
+
+				.columns:first-child {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

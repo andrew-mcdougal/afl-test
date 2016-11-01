@@ -4,6 +4,7 @@
 1. Body
 2. Table
 3. Next Button
+4. Alt version
 
 *********/
 /* 0. Variables */
@@ -12,7 +13,10 @@
 body {
   font-size: 12px;
   line-height: 120%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative; }
 
 /* 2. Table */
 .afl {
@@ -48,32 +52,6 @@ body {
       color: #FFF;
       text-align: center;
       margin: auto; }
-  .afl tbody tr .team {
-    line-height: 26px;
-    /* team logos */ }
-    .afl tbody tr .team .team-logo {
-      background-image: url("../img/teams-tiny-2x.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 20px auto;
-      display: block;
-      float: left;
-      height: 20px;
-      width: 20px;
-      overflow: hidden;
-      text-indent: -9999px;
-      opacity: 0;
-      margin: 4px 5px 0 0; }
-  .afl tbody tr .cats .team-logo {
-    background-position: 0 -240px; }
-  .afl tbody tr .power .team-logo {
-    background-position: 0 -480px; }
-  .afl tbody tr .swans .team-logo {
-    background-position: 0 -600px; }
-  .afl tbody tr .magpies .team-logo {
-    background-position: 0 -120px; }
-  .afl tbody tr .bulldogs .team-logo {
-    background-position: 0 -680px; }
   .afl tbody tr:nth-child(even) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e6e6e6+100 */
     background: #ffffff;
@@ -87,19 +65,56 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
     /* IE6-9 */ }
 
+.team {
+  line-height: 26px;
+  /* team logos */ }
+  .team .team-logo {
+    background-image: url("../img/teams-tiny-2x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 20px auto;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    opacity: 0;
+    margin: 4px 5px 0 0; }
+
+.cats .team-logo {
+  background-position: 0 -240px; }
+
+.power .team-logo {
+  background-position: 0 -480px; }
+
+.swans .team-logo {
+  background-position: 0 -600px; }
+
+.magpies .team-logo {
+  background-position: 0 -120px; }
+
+.bulldogs .team-logo {
+  background-position: 0 -680px; }
+
 /* 3. Next Button */
 .button-container {
   background: #2B0059;
-  padding: 1em; }
+  padding: 1em;
+  position: fixed;
+  bottom: -130px;
+  width: 100%;
+  height: 100px; }
 
 .glitch {
   border: none;
+  background: none;
   font-size: 40px;
   line-height: 1;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   position: absolute;
-  top: 50%;
+  bottom: 14%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -107,7 +122,7 @@ body {
   color: #fff; }
   .glitch:before, .glitch:after {
     display: block;
-    content: 'get data';
+    content: 'Alternate version';
     position: absolute;
     top: 0;
     left: 0;
@@ -121,22 +136,74 @@ body {
     color: #0ff;
     z-index: -1; }
   .glitch:hover:before {
-    animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
   .glitch:hover:after {
-    animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
 
 @keyframes glitch {
   0% {
     transform: translate(0); }
   20% {
-    transform: translate(-5px, 5px); }
+    transform: translate(-3px, 3px); }
   40% {
-    transform: translate(-5px, -5px); }
+    transform: translate(-3px, -3px); }
   60% {
-    transform: translate(5px, 5px); }
+    transform: translate(3px, 3px); }
   80% {
-    transform: translate(5px, -5px); }
+    transform: translate(3px, -3px); }
   to {
     transform: translate(0); } }
+/* 4. Alt version */
+.alt-version {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: none;
+  height: 100vh;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  padding: 5%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#01285e+0,01285e+100&1+0,0.85+100 */
+  background: -moz-linear-gradient(top, #01285e 0%, rgba(1, 40, 94, 0.85) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #01285e 0%, rgba(1, 40, 94, 0.85) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #01285e 0%, rgba(1, 40, 94, 0.85) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01285e', endColorstr='#d901285e',GradientType=0 );
+  /* IE6-9 */ }
+  .alt-version .container {
+    background: #C90010;
+    color: #FFF;
+    padding: 20px;
+    -webkit-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+  .alt-version #player-info {
+    background: #FFF;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+    .alt-version #player-info .row {
+      color: #696969; }
+      .alt-version #player-info .row .rank {
+        text-align: center; }
+
+@media all and (max-width: 900px) {
+  .alt-version {
+    font-size: 14px; }
+    .alt-version .container {
+      padding: 10px; }
+      .alt-version .container .row .columns {
+        margin-left: 2%; }
+      .alt-version .container .row .columns:first-child {
+        margin-left: 0; } }
+@media all and (max-width: 850px) {
+  .alt-version .container .row .columns:first-child {
+    opacity: 0; }
+  .alt-version #player-info .row .columns:first-child {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
