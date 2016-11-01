@@ -14,7 +14,7 @@ To view the table follow these steps:
 
 4. The table will display as requested
 
-Note: if the above instructions do not work you can view the table by [clicking this link](http://ontrendwebsites.com/afl-test/afl-table-01.html){:target="_blank"}
+Note: if the above instructions do not work you can view the table by [clicking this link](http://ontrendwebsites.com/afl-test/afl-table-01.html)
 
 
 ## Alternate version
