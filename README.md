@@ -1,31 +1,35 @@
-## Synopsis
+# Front End Developer coding task
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+Table of player data populated with JSON data.
 
-## Code Example
+### Installation
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+To view the table follow these steps:
 
-## Motivation
+1. Download the project ZIP file
+* [Github afl-test ZIP](https://github.com/andrew-mcdougal/afl-test/archive/master.zip)
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+2. Open the ZIP file
 
-## Installation
+3. Open the file "afl-table-01.html" in a web browser
 
-Provide code examples and explanations of how to get the project.
+4. The table will display as requested
 
-## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+## Alternate version
 
-## Tests
+I have created an alternate version of the table. After a feww seconds a button will slide up from the bottom of the page. Click this once you have reviewed the original task request.
 
-Describe and show how to run the tests with code examples.
+To go back to viewing the original table simply refresh your browser.
 
-## Contributors
+The alternate version is included for these reasons:
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+• I like to offer design and functionality suggestions when I feel it may contribute to the UX
+• Showing other coding skills and languages I use regularly in my work
+• This table version is responsive to smaller devices
+• Offering a different design to the original using the AFL corporate colours and a different, larger font.
 
-## License
+## Notes
 
-A short snippet describing the license (MIT, Apache, etc.)
+"Collingwood" was spelt incorrectly in the JSON file, I have left it as is.
+I found the team logos on afl.com.au that were used in the code example.
