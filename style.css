@@ -1,7 +1,28 @@
+/*********
+
+1. Body
+2. Table
+
+*********/
+
+/* 1. Body */
+body {
+	font-size: 12px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* 2. Table */
+.afl {
+	width: 620px;
+	border: 1px solid #DCDCDC;
+	margin: 2em auto;
+}
+
+
 
 /* team logos */
 .team-logo {
-	background-image: url("teams-tiny-2x.png");
+	background-image: url("../img/teams-tiny-2x.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 20px auto;
@@ -20,3 +41,10 @@
 .bulldogs .team-logo { background-position: 0 -680px;}
 
 /* styling */
+.position {
+	text-transform: lowercase;
+}
+
+.position:first-letter {
+	text-transform: capitalize;
+}

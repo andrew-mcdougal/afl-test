@@ -1,0 +1,142 @@
+/*********
+
+0. Variables
+1. Body
+2. Table
+3. Next Button
+
+*********/
+/* 0. Variables */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/* 1. Body */
+body {
+  font-size: 12px;
+  line-height: 120%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+/* 2. Table */
+.afl {
+  width: 620px;
+  border: 1px solid #DCDCDC;
+  margin: 2em auto; }
+  .afl thead th {
+    background: #E6E6E6;
+    font-size: 0.92em;
+    border-right: 1px solid gainsboro;
+    text-align: left;
+    border-bottom: 2px solid #DCDCDC;
+    height: 24px;
+    padding: 0 3px;
+    color: #696969;
+    vertical-align: middle;
+    font-weight: bold; }
+  .afl tbody tr td {
+    height: 24px;
+    padding: 2px 4px;
+    border-bottom: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    vertical-align: middle; }
+  .afl tbody tr .rank {
+    width: 22px;
+    border-left: 1px solid #DCDCDC; }
+    .afl tbody tr .rank span {
+      display: block;
+      background: #696969;
+      width: 17px;
+      height: 18px;
+      line-height: 18px;
+      color: #FFF;
+      text-align: center;
+      margin: auto; }
+  .afl tbody tr .team {
+    line-height: 26px;
+    /* team logos */ }
+    .afl tbody tr .team .team-logo {
+      background-image: url("../img/teams-tiny-2x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 20px auto;
+      display: block;
+      float: left;
+      height: 20px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      opacity: 0;
+      margin: 4px 5px 0 0; }
+  .afl tbody tr .cats .team-logo {
+    background-position: 0 -240px; }
+  .afl tbody tr .power .team-logo {
+    background-position: 0 -480px; }
+  .afl tbody tr .swans .team-logo {
+    background-position: 0 -600px; }
+  .afl tbody tr .magpies .team-logo {
+    background-position: 0 -120px; }
+  .afl tbody tr .bulldogs .team-logo {
+    background-position: 0 -680px; }
+  .afl tbody tr:nth-child(even) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e6e6e6+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
+    /* IE6-9 */ }
+
+/* 3. Next Button */
+.button-container {
+  background: #2B0059;
+  padding: 1em; }
+
+.glitch {
+  border: none;
+  font-size: 40px;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-decoration: none;
+  color: #fff; }
+  .glitch:before, .glitch:after {
+    display: block;
+    content: 'get data';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8; }
+  .glitch:after {
+    color: #f0f;
+    z-index: -2; }
+  .glitch:before {
+    color: #0ff;
+    z-index: -1; }
+  .glitch:hover:before {
+    animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+  .glitch:hover:after {
+    animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
+
+@keyframes glitch {
+  0% {
+    transform: translate(0); }
+  20% {
+    transform: translate(-5px, 5px); }
+  40% {
+    transform: translate(-5px, -5px); }
+  60% {
+    transform: translate(5px, 5px); }
+  80% {
+    transform: translate(5px, -5px); }
+  to {
+    transform: translate(0); } }
+
+/*# sourceMappingURL=style.css.map */

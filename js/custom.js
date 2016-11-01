@@ -26,7 +26,7 @@ $(document).ready(function () {
 	$.getJSON('ratings.json', function (data) {
 		var items = data.playerRatings.map(function (item) {
 			return '<tr>' +
-			'<td class="player rank">' + item.detailedRatings[0]["ranking"] + '</td>' +
+			'<td class="player rank"><span>' + item.detailedRatings[0]["ranking"] + '</span></td>' +
 			'<td class="player name">' + item.player.playerName.givenName + ' ' + item.player.playerName.surname + '</td>' +
 			'<td class="player team">' + '<span class="team-logo"></span>' + item.team.teamName + '</td>' +
 			'<td class="player position">' + item.position + '</td></tr>';
