@@ -1,0 +1,22 @@
+
+/* team logos */
+.team-logo {
+	background-image: url("teams-tiny-2x.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 20px auto;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	overflow: hidden;
+	text-indent: -9999px;
+	opacity: 0;
+}
+
+.cats .team-logo { background-position: 0 -240px;}
+.power .team-logo { background-position: 0 -480px;}
+.swans .team-logo { background-position: 0 -600px;}
+.magpies .team-logo { background-position: 0 -120px;}
+.bulldogs .team-logo { background-position: 0 -680px;}
+
+/* styling */
