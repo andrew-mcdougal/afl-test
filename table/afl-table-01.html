@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AFL Player Rating table example 1 - Andrew McDougal</title>
+
+<link href="https://cdn.jsdelivr.net/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+	<table class="afl player-ratings" width="100%"  cellpadding="0" cellspacing="0" summary="AFL Player Ratings. Top five: Overall">
+		<thead>
+			<tr>
+				<th>Rating</th>
+				<th>Player</th>
+				<th>Club</th>
+				<th>Position</th>
+			</tr>
+		</thead>
+		<tbody id="player-rows"></tbody>
+  	</table>
+
+  	<div class="alt-version">
+  		<div class="container">
+  			<div class="row">
+				<div class="one columns">Rank</div>
+				<div class="four columns">Player</div>
+				<div class="four columns">Club</div>
+				<div class="three columns">Position</div>
+			</div>
+  		</div>
+  		<div id="player-info" class="container"></div>
+  	</div>
+  	<div class="button-container">
+  		<button id="next" class="glitch">Alternate version</button>
+  	</div>
+
+</body>
+</html>

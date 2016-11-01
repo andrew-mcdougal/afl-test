@@ -236,6 +236,14 @@ line-height: 26px;
 			.rank {
 				text-align: center;
 			}
+
+			.team {
+				line-height: 20px;
+
+				.team-logo {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 }
@@ -263,6 +271,10 @@ line-height: 26px;
 }
 
 @media all and (max-width: 850px) {
+
+	.glitch {
+		font-size: 30px;
+	}
 	.alt-version {
 
 		.container {
@@ -278,6 +290,52 @@ line-height: 26px;
 		#player-info {
 
 			.row {
+
+				.columns:first-child {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 700px) {
+	.alt-version {
+
+		font-size: 12px;
+
+		.container {
+
+			display: none;
+		}
+
+		#player-info {
+
+			display: block;
+			border-radius: 8px 8px 8px 8px;
+			-webkit-border-radius: 8px 8px 8px 8px;
+
+			.row {
+
+				.position {
+					display: none;
+				}
+
+				.rank {
+					width: 5%;
+				}
+
+				.team {
+					line-height: 120%;
+				}
+
+				.name {
+					width: 50%;
+				}
+
+				.team .team-logo {
+					display: none;
+				}
 
 				.columns:first-child {
 					opacity: 1;
