@@ -232,6 +232,8 @@ line-height: 26px;
 
 		.row {
 			color: $dark-grey;
+			position: relative;
+			top: -5px;
 
 			.rank {
 				text-align: center;

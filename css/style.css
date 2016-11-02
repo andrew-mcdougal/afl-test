@@ -187,7 +187,9 @@ body {
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */ }
     .alt-version #player-info .row {
-      color: #696969; }
+      color: #696969;
+      position: relative;
+      top: -5px; }
       .alt-version #player-info .row .rank {
         text-align: center; }
       .alt-version #player-info .row .team {

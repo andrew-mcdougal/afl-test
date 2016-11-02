@@ -101,13 +101,20 @@ function altTable() {
 			var content = items.join();
 			var list = playerInfo.html(content);
 			playerInfo.append(list);
+
+			var $players = $('#player-info .row');
+			$players.hide();
+
+			var playersShow = new TimelineMax();
+
+			playersShow.staggerTo($players, 0.3, {y:5, autoAlpha: 1, display: 'block', ease:Back.easeOut}, 0.1);
 		}
 
 	});
 
 	playerInfo.text('Loading the JSON file.');
 	
-	setTimeout(tableFeatures, 50);
+	setTimeout(tableFeatures, 150);
 	
 }
 
